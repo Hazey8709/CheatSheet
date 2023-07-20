@@ -1,0 +1,96 @@
+  Bash script and execute script
+
+
+1) Bash scripts start with-
+     #!/bin/bash
+
+2) Comment  is- 
+      #
+
+3) (Documentation)-
+#Date
+#Author
+#Purpose/Directions
+
+4) echo- will print whats written on screen
+
+5) To end and save- 
+     :wq
+
+
+6) to see script on screen-
+   ScriptName is name of file .sh
+   cat  scriptName.sh
+
+7) check previlages-
+    ls -l  scriptName.sh  (for bash script .sh)
+
+8) change privilages-
+    chmod +x scriptName.sh
+
+9) Execute script in same directory-
+    ./scriptName.sh
+
+10) bash variable
+        example-1    name="  "    -(variable)
+                            
+                           echo " What's your $yourName?"   -(name is variable)
+                           sleep 2  - (makes time between commands)
+
+example-2 
+	echo "What is your name?"  -(will ask your name and sets variabe name as yourname)
+
+	read name                                  
+
+	echo "Hi $name, How are you?"
+
+11) $1  -( parameter/  )(can have multiple parameters $1, $2, $3)
+
+example-1 
+	name=$1
+
+	echo "Good Mourning $name"
+	sleep 1
+	echo "Have a good day $name!"
+
+call file   -(execute file with name as parameter/argument)
+	./scriptName.sh   yourName
+
+12) 
+	name=$1
+	user=$(whoami)
+	date=$(date)
+	whereami=$(pwd)
+
+echo "You are logged in as $user!"    -(calls variable user)
+
+echo  "How are you $user?"     
+
+echo "Today is $date?"    -(calls variable date)
+
+echo "You are in $pwd directory!"
+
+Call File -(execute file with parameter)
+	./scriptName.sh yourName
+
+
+
+13) exit   - (can put at end of script to tell it to exit after execution)
+
+14) sudo apt update   optional -yy (won't prompt first)
+       sudo apt dist-upgrade    
+(can put in begining of script to make sure everything is up to date before execution)
+
+15)
+
+
+
+
+
+
+
+
+
+
+
+
